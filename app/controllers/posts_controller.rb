@@ -16,8 +16,8 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post.update(post_params)
-     if
+    @post = Post.find(params[:id])
+  if
     redirect_to post_path(@post)
   end
 
