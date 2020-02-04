@@ -7,6 +7,12 @@ class PostsController < ApplicationController
   end
 
   def edit
+    if @post.valid?
+      @post.update(post_params)
+      redirect_to post_path(@post)
+    else
+      render :edit
+    end
   end
 
   def update
