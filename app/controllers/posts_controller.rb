@@ -17,7 +17,7 @@ class PostsController < ApplicationController
 
   def update
     @post.update(post_params)
-
+     if
     redirect_to post_path(@post)
   end
 
