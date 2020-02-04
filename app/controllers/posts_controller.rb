@@ -20,6 +20,7 @@ class PostsController < ApplicationController
   if
     redirect_to post_path(@post)
   end
+end
 
   private
 
