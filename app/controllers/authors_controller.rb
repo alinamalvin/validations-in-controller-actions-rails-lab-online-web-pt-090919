@@ -17,10 +17,12 @@ class AuthorsController < ApplicationController
     render :new
   end
   end
+end
 
   private
 
   def author_params
     params.permit(:email, :name)
   end
+  
 end
